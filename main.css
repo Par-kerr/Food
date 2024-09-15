@@ -6,7 +6,9 @@
 }
 body{
 	
-	background: main.cssno-repeat fixed top right; 
+	background: url("Bluesky.jpeg")fixed top right; 
+	background-size: cover; 
+	
 	
 }
 #container {
