@@ -80,3 +80,16 @@ header > h1{
   font-variation-settings:
     "slnt" 0;
 }
+
+
+
+ol {
+  background: #5949AE;
+  padding: 20px;
+}
+
+ol li {
+  background: #cce5ff;
+  color:black;
+  margin: 5px;
+}
