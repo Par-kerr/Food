@@ -4,23 +4,12 @@
 	
 	box-sizing: border-box;
 }
-body{
-	
-	background: url("Bluesky.jpeg")fixed top right; 
-	background-size: cover; 
-	
-	
+#container{
+	margin: 0 auto;
 }
-#container {
-	
-	width: 800px; 
-	margin: 0 auto; 
-		
-}
-
 .left{
 	
-	width: 340px;
+	flex-grow: 1;
 	height: 400px;
 	background-color: rgba(253,253,253,.5);
 	border-radius: 20px; 
@@ -28,15 +17,10 @@ body{
 	margin: 10px 10px 10px 15px; 
 	padding: 10px 10px 10px 10px; 
 	border: thick #FF0000 solid; 
-	
-		
-
-	
-}
-
+	}
 .right{
 	
-		width: 360px;
+	flex-grow: 1;
 	height: 500px;
 	background-color: rgba(253,253,253,.5);
 	border-radius: 20px; 
@@ -44,8 +28,42 @@ body{
 	margin: 10px 15px 10px 10px; 
 	padding: 15px 15px 15px 15px; 
 	border: thick #FF0000 solid;
+	}
+
+body{
 	
+	background: url("Bluesky.jpeg")fixed top right; 
+	background-size: cover; 
+	}
+
+@media only screen and (min-width: 768px) {
+body
+	
+	
+ @media only screen and (max-width: 767px){
+	 /*phones*/
+		.flex-container{
+			display: flex;
+			flex-direction: column;
+			
+			
 }
+}
+	@media only screen and (max-width: 767px) and (orientation: portrait){
+		
+	}
+	
+
+#container {
+	
+	width: 800px; 
+	margin: 0 auto; 
+		
+}
+
+
+
+
 
 footer{
 	
@@ -120,6 +138,18 @@ li a:hover:not(.active) {
   background-color: red;
 }
 
+}
 
+@media only screen and (max-width: 768px){
+	.flex-container{
+		display: flex;
+		flex-direction: column;
+		
+		
+	}
 	
+}
 
+@media only screen and (max-width: 768px) and (orientation: portrait){
+	
+}

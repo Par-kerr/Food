@@ -20,12 +20,12 @@
   <li><a href="https://www.yelp.com/">Reviews</a></li>
   <li style="float:right"><a class="active" href="#about">Locations</a></li>
 </ul>
-		
+	
 		
 		
 		
 	  </nav>
-		<section>
+		<section class="flex-container">
 		<article class="left"><img src="food.jpeg" alt="food in San Antonio" 
 								   usemap="#workmap" width="300" height="400">		
 			<map name="workmap">
@@ -61,6 +61,27 @@
       <button type="button"
 onclick="document.getElementById('demo').innerHTML = Date()"> What is the date and time?</button>
 <p id="demo"></p>
+		<br>
+		<button onclick="getLocation()">Where am I?</button>
+
+<p id="demo2"></p>
+
+<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
 
 	<footer>Copyright Parker Mikkelson 2024<br><br>
 		<audio controls>
