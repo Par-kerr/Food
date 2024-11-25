@@ -33,7 +33,8 @@
 body{
 	
 	background: url("Bluesky.jpeg")fixed top right; 
-	background-size: cover; 
+	background-size: cover;
+	
 	}
 
 @media only screen and (min-width: 768px) {
